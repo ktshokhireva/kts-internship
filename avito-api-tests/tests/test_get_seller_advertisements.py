@@ -4,10 +4,10 @@ from endpoints.post_create_advertisement import CreateAdvertisementRequest
 import pytest
 
 
-# failed ❌
+# success ✅
 def test_seller_list_increase_by_1_after_advert_creation():
     # Шаг 1. Запросить список объявлений продавца
-    seller_id = 330301
+    seller_id = 339999
     seller_advertisements_request = SellerAdvertisementsRequest()
     seller_advertisements_request.request_advertisements_of_seller(seller_id)
     seller_advertisements_request.assert_response_status_code_is(200)

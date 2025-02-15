@@ -14,6 +14,7 @@ class SellerAdvertisementsRequest(BaseRequest):
         seller_advertisements_url = f"{self.base_url}/api/1/{seller_id}/item"
         self.response = requests.get(seller_advertisements_url)
         if self.response.status_code == 200:
+            self.seller_advertisements = []
             for advertisement in self.json:
                 self.seller_advertisements.append(Advertisement(advertisement))
 
