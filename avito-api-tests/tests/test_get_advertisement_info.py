@@ -5,7 +5,7 @@ import pytest
 
 # failed ❌
 def test_advertisement_info_is_correct():
-    # Шаг 1: создать объявление с неправильным типом данных
+    # Шаг 1: создать объявление
     creation_request = CreateAdvertisementRequest()
     creation_request.create_advertisement()
 
