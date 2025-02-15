@@ -9,7 +9,6 @@ class AdvertisementInfoRequest(BaseRequest):
         advertisement_info_url = f"{self.base_url}/api/1/item/{advertisement_id}"
         self.response = requests.get(advertisement_info_url)
         if self.response.status_code == 200:
-            print(self.json)
             self.advertisement = Advertisement(self.json[0])
 
     def assert_advertisement_title_is(self, title: str):
