@@ -8,4 +8,7 @@ https://www.jetbrains.com/pycharm/download/download-thanks.html?code=PCC
 3. В проект добавлен файл со схемой запуска тестов "All API Tests" и файл requirements.txt.
 Таким образом, для запуска тестов необходимо только запустить схему All API Tests
 
+# Задание 1
+
+Баг-репорт по заданию 1 расположен в папке /Task_1
 
